@@ -14,9 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var Total: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Total.font = UIFont.boldSystemFontOfSize(20)
+        totalLabel.font = UIFont.boldSystemFontOfSize(17)
+        billField .becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
